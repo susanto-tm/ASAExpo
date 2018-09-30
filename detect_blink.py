@@ -82,7 +82,7 @@ while True:
     frame = imutils.resize(frame, width=450)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    # detect faces in teh grayscale frame
+    # detect faces in the grayscale frame
     rects = detector(gray, 0)
 
     # loop over the face detections
