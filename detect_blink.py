@@ -65,7 +65,7 @@ predictor = dlib.shape_predictor(args["shape_predictor"])
 print("[INFO] starting video stream thread...")
 # vs = FileVideoStream(args["video"]).start()
 # fileStream = True
-vs = VideoStream(src=1).start()
+vs = VideoStream(src=0).start()
 fileStream = False
 time.sleep(1.0)
 
@@ -88,7 +88,7 @@ while True:
     # loop over the face detections
     for rect in rects:
         # determine the facial landmarks for the face region, then
-        # conver the facial landmark (x, y)-coordinates to a NumPy array
+        # convert the facial landmark (x, y)-coordinates to a NumPy array
         shape = predictor(gray, rect)
         shape = face_utils.shape_to_np(shape)
 
