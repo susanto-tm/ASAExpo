@@ -124,6 +124,9 @@ while True:
             # reset the eye frame counter
             COUNTER = 0
 
+        # check to see if TOTAL is an even number then serial print b'A' to serial port
+        # if TOTAL is an odd number then serial print b'B' to serial port
+        # b'A' turns LED on and b'B' turns LED off
         if TOTAL % 2 != 0:
             ser.write(b'A')
         elif TOTAL % 2 == 0:
