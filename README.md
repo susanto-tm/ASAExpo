@@ -33,3 +33,7 @@ Open `detect-blink.ino` and make sure that the **COM Ports** are set properly ac
 ```angular2html
 python detect_blink.py --shape-predictor shape_predictor_68_face_landmarks.dat
 ```
+
+## Authors
+
+* **Adrian Rosebrock** - *Blink detection algorithm* - [PyImageSearch](https://www.pyimagesearch.com/2017/04/24/eye-blink-detection-opencv-python-dlib/)
