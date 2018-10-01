@@ -27,7 +27,7 @@ Open ```detect_blink.py``` at change the values of `EYE_AR_THRESH` and `EYE_AR_C
 to match with different conditions. Also change `src` at **line 68** to use either webcam or different USB ports.
 
 Open `detect-blink.ino` and make sure that the **COM Ports** are set properly according to the device manager
-(for Windows). Make sure that the COM port in **line 16** matches with the one in the Arduino file.
+(for Windows). Make sure that the COM port in **line 16** matches with the one in the Arduino file. Upload the Arduino code into the board.
 
 `cd` to the project root file in the Anaconda Prompt then run the following command to use the `shape_predictor_68_face_landmarks.dat`
 ```angular2html
